@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompact="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@android:drawable/ic_menu_search"
+        appcompact:showAsAction="always|collapseActionView"
+        appcompact:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="SearchView"
+        android:orderInCategory="1"
+        android:id="@+id/action_search"/>
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"/>
+    <item
+        android:id="@+id/satelite"
+        android:title="Satelite"/>
+    <item
+        android:id="@+id/terrain"
+        android:title="Terrain"/>
+
+</menu>

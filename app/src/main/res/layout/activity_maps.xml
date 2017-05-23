@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zaalgebru.mymapsapp.MapsActivity" >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="zaalgebru.mymapsapp.MapsActivity" />
+
+         <SearchView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/searchBar"
+            android:background="#b4e3e4ee"
+            android:inputType="textCapWords"
+            android:queryHint="@string/search_hint"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp">
+        </SearchView>
+
+    <RelativeLayout
+        android:layout_margin="18dp"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <ImageButton
+            android:contentDescription="Layers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_layers_black_24dp"
+            android:id="@+id/layerButton"
+            android:onClick="setLayersButton"
+            android:background="#b4e3e4ee"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:contentDescription="Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings_black_24dp"
+            android:id="@+id/menuButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#b4e3e4ee" />
+    </RelativeLayout>
+
+</FrameLayout>
